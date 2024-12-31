@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>Card details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <aside class="card">
+        <figure class="cardContainer">
+            <img src="images/bg-card-front.png" alt="Front face of a credit card">
+
+            <div class="cardData">
+                <p>1234 5678 9012 3456</p>
+            </div>
+        </figure>
+    </aside>
+   <main>
+    <section>
+        <form action="#" method="get" id="cardForm">
+            <fieldset>
+                <legend class="sr-only">Card details</legend>
+
+                <label for="name">CARDHOLDER NAME</label>
+                <input class="data" type="text" id="name" name="name" placeholder="Jorge Lanata" required>
+
+                <label for="number">CARD NUMBER</label>
+                <input class="data" type="number" id="number" name="number" placeholder="1234 5678 9012 3456" required>
+
+                <label for="month">EXP. DATE (MM/YY)</label>
+                <input class="data" type="number" id="month" name="date" placeholder="MM" required>
+                <input class="data" type="number" id="year" name="year" placeholder="YY" required>
+
+                <label for="cvc">CVC</label>
+                <input class="data" type="number" id="cvc" name="cvc" placeholder="e.g. 123" required>
+
+                <button type="submit">Confirm</button>
+             </fieldset>
+        </form>
+    </section>
+   </main>
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+  h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea:not([rows]) {
+    min-height: 10em;
+}
+
+:target {
+    scroll-margin-block: 5ex;
+}
+
+/* END OF CSS RESET */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+    min-height: 100svh;
+}
+
+main{
+    padding: 10% 20%;
+}
+
+fieldset{
+    border: none;
+    padding: 1rem;
+    gap: 0.2rem;
+    display: flex;
+    min-width: 30rem;
+    flex-direction: column;
+}
+
+form, section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.data{
+    border-radius: 0.5rem;
+    border: 1px solid #dedddf;
+    padding: 0.8rem;
+}
+
+input{
+    margin: 0.3rem 0 1rem 0;
+}
+
+button{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #21092f;
+    color: #fff;
+    transition: transform 500ms ease;
+}
+
+button:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+aside{
+    position: relative;
+    background-image: url('images/bg-main-desktop.png');
+    min-height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Front face */
+
